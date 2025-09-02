@@ -131,7 +131,7 @@ def get_attendance_for_course(session, url):
 
 def get_all_attendance():
     session = login_to_lms()
-    urls = os.getenv("COURSE_URLS").split(",")
+    urls = os.getenv("Batch_3_COURSE_URLS").split(",")
     data = []
     for url in urls:
         result = get_attendance_for_course(session, url.strip())
