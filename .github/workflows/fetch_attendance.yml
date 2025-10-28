@@ -2,7 +2,7 @@ name: Fetch Attendance and Push to Notion
 
 on:
   schedule:
-    - cron: '0 * * * *'  # runs every hour
+    - cron: '0 0 * * *'  # runs every hour
   workflow_dispatch:  # allows manual triggering
 
 jobs:
